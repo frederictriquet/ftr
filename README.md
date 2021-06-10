@@ -32,5 +32,7 @@
 
 `git checkout 'master@{1979-02-26 18:30:00}'` --> checkout at a given date
 
+`git push -u origin feature_branch_name` --> push to origin
+
 # php
 `$e = new \Exception; var_dump($e->getTraceAsString());die();`
