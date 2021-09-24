@@ -1,6 +1,7 @@
 # shell
 
 `type <command>` --> display alias, code function or complete command path
+
 `lsof -i :<port>` --> show which process is listening on <port>
 
 # docker
