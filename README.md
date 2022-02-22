@@ -4,9 +4,17 @@
 
 `lsof -i :<port>` --> show which process is listening on <port>
 
+# aliases & functions
+
+`wav2flac() { ffmpeg -i "$1" -af aformat=s32:44100 "${1:r}.flac" }`
+
+`flac2mp3() { ffmpeg -i "$1" -ab 320k -map_metadata 0 -id3v2_version 3 "${1:r}.mp3" }`
+
 # docker
 
 `docker-compose exec <container> bash`
+
+`docker run -it --entrypoint /bin/bash <image>`
 
 `docker system prune --all --volumes`
 
