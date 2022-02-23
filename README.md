@@ -2,6 +2,8 @@
 
 `type <command>` --> display alias, code function or complete command path
 
+`functions [functionName]` --> display all shell functions or one specific function with code
+
 `lsof -i :<port>` --> show which process is listening on <port>
 
 # aliases & functions
