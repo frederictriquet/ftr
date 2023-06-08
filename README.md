@@ -46,5 +46,9 @@
 
 `git push -u origin feature_branch_name` --> push to origin
 
+`git branch -r | awk '{print $1}'| egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d` --> delete local branches that do not exist on remote
+
+`git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d` --> same
+
 # php
 `$e = new \Exception; var_dump($e->getTraceAsString());die();`
