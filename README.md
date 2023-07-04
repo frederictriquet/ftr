@@ -12,6 +12,8 @@
 
 `flac2mp3() { ffmpeg -i "$1" -ab 320k -map_metadata 0 -id3v2_version 3 "${1:r}.mp3" }`
 
+`ffmpeg -i bigvideo.mp4 -vcodec libx264 -crf 24 smallvideo.mp4`
+
 # docker
 
 `docker-compose exec <container> bash`
