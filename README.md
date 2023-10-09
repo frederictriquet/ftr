@@ -54,3 +54,8 @@
 
 # php
 `$e = new \Exception; var_dump($e->getTraceAsString());die();`
+
+
+# vscode
+* extension `zoombar` -> configuration -> `configuration target` -> `workspace
+`
