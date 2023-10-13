@@ -57,5 +57,6 @@
 
 
 # vscode
-* extension `zoombar` -> configuration -> `configuration target` -> `workspace
-`
+* extension `zoombar` -> configuration -> `configuration target` -> `workspace`
+* `Ctrl + Shift + L` --> select all occurences of highlighted text
+* `Ctrl + D` --> add next occurrence to the selection
