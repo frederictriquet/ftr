@@ -1,4 +1,11 @@
-python3 -m venv .venv
+#!/usr/bin/env bash
+PYTHON=python3.12
+if [ "$1" = "3.11" ]
+then
+    PYTHON=python3.11
+fi
+echo "Creating virtual env for $PYTHON"
+$PYTHON -m venv .venv
 cat <<EOF > .envrc
 source .venv/bin/activate
 unset PS1
