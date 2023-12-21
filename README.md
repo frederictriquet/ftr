@@ -14,6 +14,10 @@
 
 `ffmpeg -i bigvideo.mp4 -vcodec libx264 -crf 24 smallvideo.mp4`
 
+`ffmpeg -i bigvideo.mp4 -vcodec libx265 -crf 28 smallvideo.mp4`
+
+`ffmpeg -i input.mp4   -c:v libx265 -preset fast -crf 28 -tag:v hvc1 -c:a eac3 -b:a 224k  output.mp4`
+
 # docker
 
 `docker-compose exec <container> bash`
