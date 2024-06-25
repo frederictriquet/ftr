@@ -6,6 +6,16 @@
 
 `lsof -i :<port>` --> show which process is listening on <port>
 
+```bash
+$ f="file.tar.gz"
+$ echo ${f##*.}
+gz
+$ echo ${f#*.}
+tar.gz
+$ echo ${f%*.}
+file
+```
+
 # aliases & functions
 
 `wav2flac() { ffmpeg -i "$1" -af aformat=s32:44100 "${1:r}.flac" }`

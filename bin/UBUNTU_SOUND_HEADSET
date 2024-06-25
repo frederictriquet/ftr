@@ -1,0 +1,2 @@
+pactl set-default-sink alsa_output.usb-Logitech_Logitech_USB_Headset-00.analog-stereo
+pactl set-default-source alsa_input.usb-Logitech_Logitech_USB_Headset-00.mono-fallback
