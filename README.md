@@ -15,6 +15,7 @@ tar.gz
 $ echo ${f%*.}
 file
 ```
+https://tldp.org/LDP/abs/html/string-manipulation.html
 
 # aliases & functions
 
