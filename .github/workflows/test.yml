@@ -1,0 +1,9 @@
+name: Test
+on: [push]
+jobs:
+  Simple-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo $MY_SECRET
+      - run: echo a
+      - run: echo $MY_SECRET | base64
